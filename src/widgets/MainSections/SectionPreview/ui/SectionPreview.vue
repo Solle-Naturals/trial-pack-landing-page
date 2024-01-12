@@ -14,8 +14,6 @@ export default {
     return {
       Preview,
       price: '37.95',
-      linkToProduct:
-        'https://www.sollenaturals.com/product/1094?country=US&lang=en&sngl=AJ47BJ&uli=0',
     };
   },
   setup() {
@@ -26,6 +24,12 @@ export default {
   computed: {
     t() {
       return useTranslation('HomePage.Preview');
+    },
+    checkoutLink() {
+      const checkoutUrl =
+        process.env.CHECKOUT_URL || 'https://checkout.sollenaturals.com';
+
+      return `${checkoutUrl}/?lang=en&country_id=185&order_type_id=40&products%5B1094%5D=1`;
     },
   },
 };
@@ -57,7 +61,7 @@ export default {
             <BaseAnimation :delay="700">
               <div class="preview__info">
                 <div v-if="!isTablet" class="preview__info_pc">
-                  <BaseButton as="a" :href="linkToProduct">{{
+                  <BaseButton as="a" :href="checkoutLink">{{
                     t('buy')
                   }}</BaseButton>
                   <span class="preview__price">$ {{ price }}</span>
@@ -65,7 +69,7 @@ export default {
                 <div v-if="isTablet">
                   <BaseButton
                     as="a"
-                    :href="linkToProduct"
+                    :href="checkoutLink"
                     class="preview__button"
                   >
                     {{ t('buy') }} $ {{ price }}

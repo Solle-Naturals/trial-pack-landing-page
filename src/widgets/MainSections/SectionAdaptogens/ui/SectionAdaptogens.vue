@@ -16,6 +16,14 @@ export default defineComponent({
       t: useTranslation('HomePage.Adaptogens'),
     };
   },
+  computed: {
+    checkoutLink() {
+      const checkoutUrl =
+        process.env.CHECKOUT_URL || 'https://checkout.sollenaturals.com';
+
+      return `${checkoutUrl}/?lang=en&country_id=185&order_type_id=40&products%5B1094%5D=1`;
+    },
+  },
 });
 </script>
 
@@ -34,7 +42,7 @@ export default defineComponent({
             <BaseButton
               as="a"
               variant="second"
-              href="https://www.sollenaturals.com/product/1094?country=US&lang=en&sngl=AJ47BJ&uli=0"
+              :href="checkoutLink"
               class="adaptogens__button"
             >
               {{ t('buy') }}
