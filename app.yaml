@@ -1,0 +1,12 @@
+runtime: nodejs18
+service: "trial-pack"
+instance_class: F1
+handlers:
+  - url: /
+    static_files: dist/index.html
+    upload: dist/index.html
+
+  - url: /
+    static_dir: dist
+includes:
+  - app_env_variables.yaml
