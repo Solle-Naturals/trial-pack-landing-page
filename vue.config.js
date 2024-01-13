@@ -1,8 +1,9 @@
 const { defineConfig } = require('@vue/cli-service');
+
+require('dotenv').config({path: './app_env_variables.yaml'})
+
 module.exports = defineConfig({
-  transpileDependencies: [
-    'vuetify'
-  ],
+  transpileDependencies: ['vuetify'],
   lintOnSave: false,
   publicPath: process.env.NODE_ENV === 'production' ? '/' : '',
 

@@ -27,7 +27,7 @@ export default {
     },
     checkoutLink() {
       const checkoutUrl =
-        process.env.CHECKOUT_URL || 'https://checkout.sollenaturals.com';
+        process.env.VUE_APP_CHECKOUT_URL || 'https://checkout.sollenaturals.com';
 
       return `${checkoutUrl}/?lang=en&country_id=185&order_type_id=40&products%5B1094%5D=1`;
     },
