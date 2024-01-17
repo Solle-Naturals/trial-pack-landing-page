@@ -2,8 +2,8 @@
   <video
     crossorigin="true"
     playsinline
-    poster="../video/poster-2.png"
-    src="../video/preview.mp4"
+    poster="../video/poster.png"
+    src="https://sollefiles.blob.core.windows.net/files/3ce66cfb-e88a-4757-b103-de9a0936253d/Solle_Naturals_trial-pack-landing.mp4"
     muted
     loop
     autoplay

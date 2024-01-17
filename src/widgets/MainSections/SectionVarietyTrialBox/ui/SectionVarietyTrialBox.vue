@@ -14,7 +14,7 @@ export default {
   data() {
     return {
       VarietyBox,
-      price: '37.95',
+      price: '34.95',
       LINK_TO_BOX,
     };
   },

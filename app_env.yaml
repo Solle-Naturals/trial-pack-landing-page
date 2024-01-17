@@ -1,0 +1,5 @@
+env_variables:
+  PORT: 8080
+  NODE_ENV: "production"
+  VUE_APP_CHECKOUT_URL: 'https://dev.checkout.sollenaturals.com'
+  VUE_APP_NAME: "Solle Trial Pack"
