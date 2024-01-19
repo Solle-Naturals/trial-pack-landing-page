@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref, onMounted, onBeforeUnmount } from 'vue';
 import { BaseContainer } from '@/shared/ui';
 import Wave from '../images/wave.png';
 import { useTranslation } from '@/app/i18n/hooks';
@@ -10,9 +10,27 @@ export default defineComponent({
   },
   setup() {
     const t = useTranslation('HomePage.Video');
+    const windowWidth = ref(window.innerWidth);
+
+    // Update window width on resize
+    const updateWindowWidth = () => {
+      windowWidth.value = window.innerWidth;
+    };
+
+    // Add resize event listener
+    onMounted(() => {
+      window.addEventListener('resize', updateWindowWidth);
+    });
+
+    // Remove resize event listener on component unmount
+    onBeforeUnmount(() => {
+      window.removeEventListener('resize', updateWindowWidth);
+    });
+
     return {
       t,
       Wave,
+      windowWidth,
     };
   },
 });
@@ -32,12 +50,35 @@ export default defineComponent({
             </v-col>
           </v-row>
           <div class="player">
-            <vue-plyr>
-              <div
-                data-plyr-provider="youtube"
-                data-plyr-embed-id="KKg5mLqfNMk"
-              ></div>
-            </vue-plyr>
+            <iframe
+              v-if="$i18n.locale === 'es'"
+              title="vimeo-player"
+              src="https://player.vimeo.com/video/904256493?h=4169dd2f57"
+              width="640"
+              height="360"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              v-else-if="windowWidth < 768"
+              title="vimeo-player"
+              src="https://player.vimeo.com/video/888841058?h=48174557c5"
+              width="640"
+              height="360"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              v-else
+              title="vimeo-player"
+              src="https://player.vimeo.com/video/888841607?h=181b6a9d10"
+              width="640"
+              height="360"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </BaseContainer>
@@ -106,11 +147,11 @@ export default defineComponent({
 
   @media (max-width: $mobile) {
     margin-top: toRem(30);
+    max-width: 80%;
+    aspect-ratio: 9 / 16;
   }
 
-  @media (max-width: $mobileSmall) {
-    aspect-ratio: 1 / 1;
-  }
+  --plyr-color-main: #c0d701;
 }
 </style>
 
