@@ -3,6 +3,7 @@ import { defineComponent } from 'vue';
 import { BaseContainer } from '@/shared/ui';
 import Wave from '../images/wave.png';
 import { useTranslation } from '@/app/i18n/hooks';
+import { isMobile } from '@/shared/lib';
 
 export default defineComponent({
   components: {
@@ -13,6 +14,7 @@ export default defineComponent({
     return {
       t,
       Wave,
+      isMobile,
     };
   },
 });
@@ -31,13 +33,27 @@ export default defineComponent({
               <h2>{{ t('title') }}</h2>
             </v-col>
           </v-row>
-          <div class="player">
-            <vue-plyr>
-              <div
-                data-plyr-provider="youtube"
-                data-plyr-embed-id="KKg5mLqfNMk"
-              ></div>
-            </vue-plyr>
+          <div class="player" style="border-width: 0">
+            <iframe
+              v-if="$i18n.locale === 'es'"
+              title="vimeo-player"
+              src="https://player.vimeo.com/video/904256493?h=4169dd2f57"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              v-else-if="isMobile"
+              title="vimeo-player"
+              src="https://player.vimeo.com/video/888841058?h=48174557c5"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              v-else
+              title="vimeo-player"
+              src="https://player.vimeo.com/video/888841607?h=181b6a9d10"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </BaseContainer>
@@ -95,6 +111,7 @@ export default defineComponent({
     }
   }
 }
+
 .player {
   position: relative;
   max-width: toRem(1165);
@@ -106,11 +123,11 @@ export default defineComponent({
 
   @media (max-width: $mobile) {
     margin-top: toRem(30);
+    max-width: 80%;
+    aspect-ratio: 9 / 16;
   }
 
-  @media (max-width: $mobileSmall) {
-    aspect-ratio: 1 / 1;
-  }
+  --plyr-color-main: #c0d701;
 }
 </style>
 

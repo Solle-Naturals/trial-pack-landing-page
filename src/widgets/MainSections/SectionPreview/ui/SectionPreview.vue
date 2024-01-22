@@ -3,7 +3,7 @@ import { defineComponent } from "vue";
 import { useTranslation } from "@/app/i18n/hooks";
 import { BaseContainer, BaseAnimation, BaseButton } from "@/shared/ui";
 import { isMobile, LINK_TO_BOX } from "@/shared/lib";
-import DesctopVideo from "./DesctopVideo.vue";
+import DesktopVideo from "./DesktopVideo.vue";
 import MobileVideo from "./MobileVideo.vue";
 
 export default defineComponent({
@@ -11,7 +11,7 @@ export default defineComponent({
     BaseContainer,
     BaseAnimation,
     BaseButton,
-    DesctopVideo,
+    DesktopVideo,
     MobileVideo,
   },
   data() {
@@ -48,7 +48,7 @@ export default defineComponent({
       </v-row>
     </BaseContainer>
     <div class="preview__video">
-      <DesctopVideo v-if="!isMobile" />
+      <DesktopVideo v-if="!isMobile" />
       <MobileVideo v-if="isMobile" />
     </div>
   </section>
@@ -107,7 +107,6 @@ export default defineComponent({
     }
 
     & video {
-      position: absolute;
       position: absolute;
       left: 0;
       top: 0;
