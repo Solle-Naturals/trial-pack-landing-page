@@ -1,8 +1,9 @@
 <script lang="ts">
-import { defineComponent, ref, onMounted, onBeforeUnmount } from 'vue';
+import { defineComponent } from 'vue';
 import { BaseContainer } from '@/shared/ui';
 import Wave from '../images/wave.png';
 import { useTranslation } from '@/app/i18n/hooks';
+import { isMobile } from '@/shared/lib';
 
 export default defineComponent({
   components: {
@@ -10,27 +11,10 @@ export default defineComponent({
   },
   setup() {
     const t = useTranslation('HomePage.Video');
-    const windowWidth = ref(window.innerWidth);
-
-    // Update window width on resize
-    const updateWindowWidth = () => {
-      windowWidth.value = window.innerWidth;
-    };
-
-    // Add resize event listener
-    onMounted(() => {
-      window.addEventListener('resize', updateWindowWidth);
-    });
-
-    // Remove resize event listener on component unmount
-    onBeforeUnmount(() => {
-      window.removeEventListener('resize', updateWindowWidth);
-    });
-
     return {
       t,
       Wave,
-      windowWidth,
+      isMobile,
     };
   },
 });
@@ -49,24 +33,18 @@ export default defineComponent({
               <h2>{{ t('title') }}</h2>
             </v-col>
           </v-row>
-          <div class="player">
+          <div class="player" style="border-width: 0">
             <iframe
               v-if="$i18n.locale === 'es'"
               title="vimeo-player"
               src="https://player.vimeo.com/video/904256493?h=4169dd2f57"
-              width="640"
-              height="360"
-              frameborder="0"
               allowfullscreen
             ></iframe>
 
             <iframe
-              v-else-if="windowWidth < 768"
+              v-else-if="isMobile"
               title="vimeo-player"
               src="https://player.vimeo.com/video/888841058?h=48174557c5"
-              width="640"
-              height="360"
-              frameborder="0"
               allowfullscreen
             ></iframe>
 
@@ -74,9 +52,6 @@ export default defineComponent({
               v-else
               title="vimeo-player"
               src="https://player.vimeo.com/video/888841607?h=181b6a9d10"
-              width="640"
-              height="360"
-              frameborder="0"
               allowfullscreen
             ></iframe>
           </div>
@@ -136,6 +111,7 @@ export default defineComponent({
     }
   }
 }
+
 .player {
   position: relative;
   max-width: toRem(1165);
