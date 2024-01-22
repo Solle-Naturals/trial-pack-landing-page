@@ -40,6 +40,42 @@ export const SLIDERS: ISlide[] = [
   },
 
   {
+    key: 'CinnaMate',
+    title: {
+      text: 'Cinna',
+      strong: 'Mâte®',
+    },
+    subtitle: 'subtitle',
+    imageUrl: Slide_4,
+    items: [
+      {
+        title: 'bloodSugar',
+        text: 'bloodSugar_text',
+      },
+      {
+        title: 'cravingControl',
+        text: 'cravingControl_text',
+      },
+      {
+        title: 'cleanEnergy',
+        text: 'cleanEnergy_text',
+      },
+      {
+        title: 'gutHealth',
+        text: 'gutHealth_text',
+      },
+      {
+        title: 'immuneHealth',
+        text: 'immuneHealth_text',
+      },
+      {
+        title: 'mentalFocus',
+        text: 'mentalFocus_text',
+      },
+    ],
+  },
+
+  {
     key: 'SolleReNue',
     title: {
       text: 'Solle',
@@ -103,42 +139,6 @@ export const SLIDERS: ISlide[] = [
       {
         title: 'immuneHealth',
         text: 'immuneHealth_text',
-      },
-    ],
-  },
-
-  {
-    key: 'CinnaMate',
-    title: {
-      text: 'Cinna',
-      strong: 'Mâte®',
-    },
-    subtitle: 'subtitle',
-    imageUrl: Slide_4,
-    items: [
-      {
-        title: 'bloodSugar',
-        text: 'bloodSugar_text',
-      },
-      {
-        title: 'cravingControl',
-        text: 'cravingControl_text',
-      },
-      {
-        title: 'cleanEnergy',
-        text: 'cleanEnergy_text',
-      },
-      {
-        title: 'gutHealth',
-        text: 'gutHealth_text',
-      },
-      {
-        title: 'immuneHealth',
-        text: 'immuneHealth_text',
-      },
-      {
-        title: 'mentalFocus',
-        text: 'mentalFocus_text',
       },
     ],
   },

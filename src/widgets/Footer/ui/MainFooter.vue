@@ -45,7 +45,7 @@ export default {
                 v-for="(social, index) in socials"
                 :key="index"
               >
-                <a class="social__link" :href="social.href">
+                <a class="social__link" :href="social.href" target="_blank">
                   <component :is="social.icon" />
                 </a>
               </v-list-item>
