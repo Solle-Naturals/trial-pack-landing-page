@@ -38,6 +38,7 @@ export default defineComponent({
               v-if="$i18n.locale === 'es'"
               title="vimeo-player"
               src="https://player.vimeo.com/video/904256493?h=4169dd2f57"
+              height="480"
               allowfullscreen
             ></iframe>
 
@@ -122,8 +123,8 @@ export default defineComponent({
   aspect-ratio: 1165 / 614;
 
   @media (max-width: $mobile) {
-    margin-top: toRem(30);
-    max-width: 80%;
+    margin-top: -200px;
+    margin-bottom: -200px;
     aspect-ratio: 9 / 16;
   }
 
