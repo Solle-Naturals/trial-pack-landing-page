@@ -2,7 +2,7 @@
   <video
     crossorigin="anonymous"
     playsinline
-    poster="../video/poster.png"
+    poster="../video/poster.jpg"
     src="https://sollefiles.blob.core.windows.net/files/3ce66cfb-e88a-4757-b103-de9a0936253d/Solle_Naturals_trial-pack-landing.mp4"
     muted
     loop

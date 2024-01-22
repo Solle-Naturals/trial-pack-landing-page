@@ -1,10 +1,10 @@
 import { type ISlide } from '../types';
 
-import Slide_1 from '../images/slide-01.png';
-import Slide_2 from '../images/slide-02.png';
-import Slide_3 from '../images/slide-03.png';
-import Slide_4 from '../images/slide-04.png';
-import Slide_5 from '../images/slide-05.png';
+import Slide_1 from '../images/slide-01.jpg';
+import Slide_2 from '../images/slide-02.jpg';
+import Slide_3 from '../images/slide-03.jpg';
+import Slide_4 from '../images/slide-04.jpg';
+import Slide_5 from '../images/slide-05.jpg';
 
 export const SLIDERS: ISlide[] = [
   {

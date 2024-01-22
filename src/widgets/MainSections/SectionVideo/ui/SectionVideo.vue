@@ -33,24 +33,22 @@ export default defineComponent({
               <h2>{{ t('title') }}</h2>
             </v-col>
           </v-row>
-          <div class="player" style="border-width: 0">
+          <div v-if="$i18n.locale === 'es'" class="player" style="border-width: 0">
             <iframe
-              v-if="$i18n.locale === 'es'"
               title="vimeo-player"
               src="https://player.vimeo.com/video/904256493?h=4169dd2f57"
-              height="480"
               allowfullscreen
             ></iframe>
-
+          </div>
+          <div v-else-if="isMobile" class="player" style="border-width: 0; aspect-ratio: 9 / 16;">
             <iframe
-              v-else-if="isMobile"
               title="vimeo-player"
               src="https://player.vimeo.com/video/888841058?h=48174557c5"
               allowfullscreen
             ></iframe>
-
-            <iframe
-              v-else
+          </div>
+          <div v-else class="player" style="border-width: 0">
+          <iframe
               title="vimeo-player"
               src="https://player.vimeo.com/video/888841607?h=181b6a9d10"
               allowfullscreen
@@ -68,7 +66,6 @@ export default defineComponent({
 .preview {
   position: relative;
   overflow: hidden;
-
   &__image {
     & img {
       width: 100%;
@@ -77,8 +74,9 @@ export default defineComponent({
   }
 
   &__wrapper {
+    background-color: $parchment_cream;
     position: relative;
-
+    padding-bottom: 1em;
     &::before {
       content: '';
       position: absolute;
@@ -86,7 +84,6 @@ export default defineComponent({
       top: 0;
       width: 100%;
       height: 80%;
-      background-color: $parchment_cream;
       z-index: $zIndex_1;
 
       @media (max-width: $mobile) {
@@ -114,18 +111,13 @@ export default defineComponent({
 }
 
 .player {
-  position: relative;
   max-width: toRem(1165);
   margin: 0 auto;
   border-radius: toRem(8);
   overflow: hidden;
-  margin-top: toRem(50);
-  aspect-ratio: 1165 / 614;
+  aspect-ratio: 16 / 9;
 
   @media (max-width: $mobile) {
-    margin-top: -200px;
-    margin-bottom: -200px;
-    aspect-ratio: 9 / 16;
   }
 
   --plyr-color-main: #c0d701;

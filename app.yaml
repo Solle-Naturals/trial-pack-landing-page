@@ -3,12 +3,15 @@ service: "trial-pack"
 instance_class: F1
 handlers:
   - url: /
+    secure: always
     static_files: dist/index.html
     upload: dist/index.html
   - url: /(.*)
+    secure: always
     static_files: dist/\1
     upload: dist/.*
   - url: .*
+    secure: always
     script: auto
 includes:
   - app_env.yaml
