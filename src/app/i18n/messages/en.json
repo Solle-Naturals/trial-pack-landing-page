@@ -38,6 +38,21 @@
         "alkalizing": "Alkalizing",
         "alkalizing_text": "Chlorophyll helps balance pH levels in the body, which reduces acidity and promotes a feeling of overall wellness"
       },
+      "CinnaMate": {
+        "subtitle": "Energy + focus",
+        "bloodSugar": "Blood sugar",
+        "bloodSugar_text": "Cinnamon, nopal and banaba leaf help the body maintain normal-range blood sugar levels",
+        "cravingControl": "Craving control",
+        "cravingControl_text": "Yerba mate contains 24 vitamins and minerals and 15 amino acids to help give your body what it needs to fight cravings",
+        "cleanEnergy": "Clean energy",
+        "cleanEnergy_text": "Adaptogens and a balanced form of naturally occurring caffeine from yerba mate help increase stamina throughout the day, without jitters",
+        "gutHealth": "Gut health",
+        "gutHealth_text": "Provides digestive energy and helps promote regularity",
+        "immuneHealth": "Immune health",
+        "immuneHealth_text": "Anti-microbial and anti-viral properties in yerba mate and thyme help support the natural blood-cleansing functions of the body and promote a strong immune response",
+        "mentalFocus": "Mental focus",
+        "mentalFocus_text": "Yerba mate, nopal, and cinnamon are all recognized for their ability to help boost mental focus"
+      },
       "SolleReNue": {
         "subtitle": "Daily detox + nutrition",
         "stressRelief": "Stress Relief",
@@ -65,21 +80,6 @@
         "respiratoryCirculatorySupport_text": "Contains clarifying herbs to help keep sinus, respiratory and circulatory systems clear",
         "immuneHealth": "Immune health",
         "immuneHealth_text": "Cupuaçu is high in vitamin C, providing your body with what it needs to support your immune system"
-      },
-      "CinnaMate": {
-        "subtitle": "Energy + focus",
-        "bloodSugar": "Blood sugar",
-        "bloodSugar_text": "Cinnamon, nopal and banaba leaf help the body maintain normal-range blood sugar levels",
-        "cravingControl": "Craving control",
-        "cravingControl_text": "Yerba mate contains 24 vitamins and minerals and 15 amino acids to help give your body what it needs to fight cravings",
-        "cleanEnergy": "Clean energy",
-        "cleanEnergy_text": "Adaptogens and a balanced form of naturally occurring caffeine from yerba mate help increase stamina throughout the day, without jitters",
-        "gutHealth": "Gut health",
-        "gutHealth_text": "Provides digestive energy and helps promote regularity",
-        "immuneHealth": "Immune health",
-        "immuneHealth_text": "Anti-microbial and anti-viral properties in yerba mate and thyme help support the natural blood-cleansing functions of the body and promote a strong immune response",
-        "mentalFocus": "Mental focus",
-        "mentalFocus_text": "Yerba mate, nopal, and cinnamon are all recognized for their ability to help boost mental focus"
       },
       "SolleRoyal": {
         "subtitle": "Collagen Couture",

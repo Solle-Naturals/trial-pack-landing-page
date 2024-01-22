@@ -38,6 +38,21 @@
         "alkalizing": "Alcaliniza",
         "alkalizing_text": "La clorofila equilibra los niveles de pH en el cuerpo, lo cual reduce la acidez y promueve un sentimiento de bienestar general."
       },
+      "CinnaMate": {
+        "subtitle": "Energía + concentración",
+        "bloodSugar": "Glucosa",
+        "bloodSugar_text": "Canela, nopal y hoja de banaba que ayudan al cuerpo a mantener normales los niveles del azúcar.",
+        "cravingControl": "Control de antojos",
+        "cravingControl_text": "Yerba mate contiene 24 vitaminas y minerales y 15 aminoácidos que le dan al cuerpo lo que necesita para combatir los antojos",
+        "cleanEnergy": "Energía limpia",
+        "cleanEnergy_text": "Los adaptógenos y la cafeína natural de la yerba mate ayudan a aumentar la resistencia durante el día sin tener altibajos.",
+        "gutHealth": "Salud intestinal",
+        "gutHealth_text": "Provee energía digestiva y ayuda a promover la regularidad.",
+        "immuneHealth": "Salud inmunológica",
+        "immuneHealth_text": "Las propiedades antimicrobianas y anti-virales de la yerba mate y el tomillo ayudan a promover las funciones naturales de limpieza en la sangre así como una fuerte respuesta inmunológica.",
+        "mentalFocus": "Concentración mental",
+        "mentalFocus_text": "La yerba mate, el nopal y la canela son reconocidos por su capacidad para ayudar a mejorar el enfoque mental."
+      },
       "SolleReNue": {
         "subtitle": "Equilibrio diario + nutrición",
         "stressRelief": "Alivio del estré",
@@ -65,21 +80,6 @@
         "respiratoryCirculatorySupport_text": "Contiene hierbas clarificantes que ayudan a mantener limpios los sistemas respiratorio, circulatorio y sinusal.",
         "immuneHealth": "Inmunidad",
         "immuneHealth_text": "El cupuaçu tiene un alto contenido de vitamina C, lo que le brinda a su cuerpo lo que necesita para respaldar su sistema inmunológico."
-      },
-      "CinnaMate": {
-        "subtitle": "Energía + concentración",
-        "bloodSugar": "Glucosa",
-        "bloodSugar_text": "Canela, nopal y hoja de banaba que ayudan al cuerpo a mantener normales los niveles del azúcar.",
-        "cravingControl": "Control de antojos",
-        "cravingControl_text": "Yerba mate contiene 24 vitaminas y minerales y 15 aminoácidos que le dan al cuerpo lo que necesita para combatir los antojos",
-        "cleanEnergy": "Energía limpia",
-        "cleanEnergy_text": "Los adaptógenos y la cafeína natural de la yerba mate ayudan a aumentar la resistencia durante el día sin tener altibajos.",
-        "gutHealth": "Salud intestinal",
-        "gutHealth_text": "Provee energía digestiva y ayuda a promover la regularidad.",
-        "immuneHealth": "Salud inmunológica",
-        "immuneHealth_text": "Las propiedades antimicrobianas y anti-virales de la yerba mate y el tomillo ayudan a promover las funciones naturales de limpieza en la sangre así como una fuerte respuesta inmunológica.",
-        "mentalFocus": "Concentración mental",
-        "mentalFocus_text": "La yerba mate, el nopal y la canela son reconocidos por su capacidad para ayudar a mejorar el enfoque mental."
       },
       "SolleRoyal": {
         "subtitle": "Costura de colágeno",

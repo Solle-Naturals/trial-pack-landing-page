@@ -20,9 +20,9 @@ export default {
       isTablet,
       t: useTranslation('Footer'),
       socials: [
-        { icon: FacebookIcon, href: '#' },
-        { icon: InstagramIcon, href: '#' },
-        { icon: YoutubeIcon, href: '#' },
+        { icon: FacebookIcon, href: 'https://www.facebook.com/SolleNaturals' },
+        { icon: InstagramIcon, href: 'https://www.instagram.com/sollenaturals/' },
+        { icon: YoutubeIcon, href: 'https://www.youtube.com/channel/UCtIL0YOEjTuYNYTDO8SpVrg' },
       ],
     };
   },
@@ -203,6 +203,7 @@ export default {
   &__link {
     color: $white;
     @include flexColumn(center, center);
+
     & svg {
       width: toRem(36);
       height: toRem(36);
