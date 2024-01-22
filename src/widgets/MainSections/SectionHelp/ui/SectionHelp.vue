@@ -6,7 +6,7 @@ import Box from '../images/box.png';
 
 import Man from '../images/man.png';
 import Lightning from '../images/lightning.png';
-import Shit from '../images/shit.png';
+import Health from '../images/health.png';
 import HairSlin from '../images/hair-skin.png';
 
 export default {
@@ -22,7 +22,7 @@ export default {
       list: [
         { img: Man, bold: 'stress_bold', text: 'stress' },
         { img: Lightning, bold: 'sustained_bold', text: 'sustained' },
-        { img: Shit, bold: 'immune_bold', text: 'immune' },
+        { img: Health, bold: 'immune_bold', text: 'immune' },
         { img: HairSlin, bold: 'hair_bold', text: 'hair' },
       ],
     };
