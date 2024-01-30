@@ -33,7 +33,14 @@ export default defineComponent({
               <h2>{{ t('title') }}</h2>
             </v-col>
           </v-row>
-          <div v-if="$i18n.locale === 'es'" class="player" style="border-width: 0">
+          <div v-if="$i18n.locale === 'es' && isMobile" class="player" style="border-width: 0">
+            <iframe
+              title="vimeo-player"
+              src="https://player.vimeo.com/video/907648044?h=4169dd2f57"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div v-else-if="$i18n.locale === 'es'" class="player" style="border-width: 0">
             <iframe
               title="vimeo-player"
               src="https://player.vimeo.com/video/904256493?h=4169dd2f57"
