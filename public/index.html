@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <meta property="og:site_name" data-hid="og:site_name" name="og:site_name" content="Solle Naturals Trial Box" />
+  <meta property="og:type" data-hid="og:type" name="og:type" content="website" />
+  <meta property="twitter:card" data-hid="twitter:card" name="twitter:card" content="summary_large_image" />
+  <meta property="og:title" data-hid="og:title" name="og:title" content="Dip Your Toes Into the World of Adaptogens" />
+  <meta property="og:description" data-hid="og:description" name="og:description"
+    content="Stop waiting to address your health. Revamp your daily routine and try all five of our best-selling adaptogenic drinks at once with the Trial Variety Box!" />
+  <meta property="og:image" data-hid="og:image" name="og:image"
+    content="https://trial-pack.sollenaturals.com/Solle_Naturals_Trial_Variety_Box.png" />
+  <meta property="og:url" data-hid="og:url" name="og:url" content="https://trial-pack.sollenaturals.com/" />
+
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
