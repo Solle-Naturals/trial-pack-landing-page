@@ -3,7 +3,7 @@
     crossorigin="anonymous"
     playsinline
     poster="../video/poster.png"
-    src="https://sollefiles.blob.core.windows.net/files/1c6bc5e1-32ac-4d6c-aee1-fb70c7f380a9/Solle_Naturals_trial-pack-landing-mobile.mp4"
+    src="https://sollefiles.s3.us-east-005.backblazeb2.com/files/1c6bc5e1-32ac-4d6c-aee1-fb70c7f380a9/Solle_Naturals_trial-pack-landing-mobile.mp4"
     muted
     loop
     autoplay
