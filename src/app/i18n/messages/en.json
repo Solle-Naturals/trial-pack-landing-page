@@ -1,7 +1,8 @@
 {
   "Header": {
     "language": "Language",
-    "get_box": "Get your trial box"
+    "get_box": "Get your trial box",
+    "country": "Country"
   },
   "Footer": {
     "copyright": "©Copyright 2024 Solle Naturals LLC. All rights reserved.",

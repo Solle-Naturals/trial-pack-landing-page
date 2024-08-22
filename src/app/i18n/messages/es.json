@@ -1,7 +1,8 @@
 {
   "Header": {
     "language": "Idioma",
-    "get_box": "Recibe tu paquete de prueba"
+    "get_box": "Recibe tu paquete de prueba",
+    "country": "País"
   },
   "Footer": {
     "copyright": "©Copyright 2024 Solle Naturals LLC. All rights reserved.",
