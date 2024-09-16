@@ -1,7 +1,7 @@
 {
   "Header": {
     "language": "Language",
-    "get_box": "Get your reset trial box",
+    "get_box": "Get your trial box",
     "country": "Country"
   },
   "Footer": {
@@ -11,7 +11,7 @@
   "HomePage": {
     "Preview": {
       "title": "Level up your daily routine. Level up your life.",
-      "get_box": "Get your reset trial box today"
+      "get_box": "Get your trial box today"
     },
     "Help": {
       "title": "Advanced therapeutic nutrition formulated to help you naturally re-establish physical and mental balance",
