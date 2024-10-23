@@ -17,7 +17,9 @@ import { getCurrentLocale } from './i18n/utils';
 import { setLanguage } from './i18n/hooks';
 import VueMeta from 'vue-meta';
 
-Vue.use(VueMeta);
+Vue.use(VueMeta, {
+  refreshOnceOnNavigation: true,
+});
 
 export default Vue.extend({
   components: {
@@ -44,8 +46,7 @@ export default Vue.extend({
         },
         {
           property: 'og:image',
-          content:
-            'https://trial-pack.sollenaturals.com/img/variety-box.bee9a35a.png',
+          content: 'https://trial-pack.sollenaturals.com/img/box.92e11122.png',
         },
         {
           property: 'og:url',
@@ -56,7 +57,7 @@ export default Vue.extend({
     };
   },
   mounted() {
-    document.title = 'Solle Trial Pack';
+    // document.title = 'Solle Trial Pack';
     const currentLocale = getCurrentLocale();
     setLanguage(currentLocale);
   },
