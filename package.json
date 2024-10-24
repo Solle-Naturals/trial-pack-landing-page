@@ -1,6 +1,6 @@
 {
-  "name": "solle_vue2",
-  "version": "0.1.0",
+  "name": "solle-trial-reset-box",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
