@@ -1,17 +1,17 @@
 {
   "Header": {
     "language": "Idioma",
-    "get_box": "Obtén tu Paquete de Prueba",
+    "get_box": "Obtén tu Paquete Reinicio-3 dias",
     "country": "País"
   },
   "Footer": {
-    "copyright": "©Copyright 2024 Solle Naturals LLC. All rights reserved.",
+    "copyright": "©Copyright 2025 Solle Naturals LLC. All rights reserved.",
     "info": "*Estas declaraciones no han sido evaluadas por la Administración de Alimentos y Medicamentos. Este producto no está destinado a diagnosticar, tratar, curar o prevenir ninguna enfermedad."
   },
   "HomePage": {
     "Preview": {
       "title": "Eleva tu rutina diaria. Eleva tu vida.",
-      "get_box": "Obtén tu Paquete de Prueba Hoy"
+      "get_box": "Obtén tu Paquete Reinicio-3 dias"
     },
     "Help": {
       "title": "Nutrición terapéutica formulada para ayudarte a restablecer de manera natural el equilibrio físico y mental.",
@@ -110,8 +110,8 @@
       "heavyMetals": "Pruebas por terceros"
     },
     "VarietyTrialBox": {
-      "title": "Paquete Reinicio de Prueba",
-      "subtitle": "El paquete de Reinicio contiene tres porciones individuales de cada una de nuestras cinco bebidas adaptogénicas más vendidas para transformar sistemáticamente todo tu día, y con su uso constante, también transformará tu futuro.",
+      "title": "Paquete Reinicio-3 dias",
+      "subtitle": "El Paquete Reinicio-3 dias contiene tres porciones individuales de cada una de nuestras cinco bebidas adaptogénicas más vendidas para transformar sistemáticamente todo tu día, y con su uso constante, también transformará tu futuro.",
       "second_subtitle": "<strong>Recibes:</strong> 3 paquetes de Solle<b>Vital®</b>, Cinna<b>Mate®</b>, Solle<b>ReNue®</b>, Solle<b>Excell®</b> y Solle<b>Royal™</b>, que te proporcionan una poderosa combinación de nutrientes para restablecer el equilibrio físico, mental y emocional tan necesario en la sociedad moderna actual.",
       "buy": "Comprar Ahora"
     },

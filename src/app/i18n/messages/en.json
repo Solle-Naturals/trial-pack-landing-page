@@ -1,17 +1,17 @@
 {
   "Header": {
     "language": "Language",
-    "get_box": "Get your trial box",
+    "get_box": "Get your 3 Day Reset Trial box",
     "country": "Country"
   },
   "Footer": {
-    "copyright": "©Copyright 2024 Solle Naturals LLC. All rights reserved.",
+    "copyright": "©Copyright 2025 Solle Naturals LLC. All rights reserved.",
     "info": "*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease."
   },
   "HomePage": {
     "Preview": {
       "title": "Level up your daily routine. Level up your life.",
-      "get_box": "Get your trial box today"
+      "get_box": "Get your 3 Day Reset Trial box today"
     },
     "Help": {
       "title": "Advanced therapeutic nutrition formulated to help you naturally re-establish physical and mental balance",
@@ -110,8 +110,8 @@
       "heavyMetals": "Free of heavy metals"
     },
     "VarietyTrialBox": {
-      "title": "Trial Reset Box",
-      "subtitle": "The Trial Reset Box contains three individual servings of each of our five, best-selling adaptogenic drinks to systematically transform your entire day, and with consistent use, your future.",
+      "title": "3 Day Reset Trial box",
+      "subtitle": "The 3 Day Reset Trial box contains three individual servings of each of our five, best-selling adaptogenic drinks to systematically transform your entire day, and with consistent use, your future.",
       "second_subtitle": "<strong>You receive:</strong> 3 packets of Solle<b>Vital®</b>, Cinna<b>Mate®</b>, Solle<b>ReNue®</b>, Solle<b>Excell®</b>, and Solle<b>Royal™</b>, providing you with a powerful combination of nutrients to reset and rebalance the physical, mental and emotional imbalances that are common in today's modern society.",
       "buy": "Buy Now"
     },

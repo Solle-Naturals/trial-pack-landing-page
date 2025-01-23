@@ -43,7 +43,7 @@ export default {
         <v-row class="trial__block" no-gutters>
           <v-col :cols="12">
             <BaseAnimation :delay="300">
-              <h2>{{ t('title') }}</h2>
+              <h3>{{ t('title') }}</h3>
             </BaseAnimation>
           </v-col>
           <v-col v-if="isTablet" :cols="12">
@@ -120,8 +120,21 @@ export default {
   }
 
   &__block {
+    @media (min-width: 1350px) {
+      h3 {
+        font-size: toRem(40);
+      }
+    }
+    @media (max-width: 1350px) {
+      h3 {
+        font-size: toRem(40);
+      }
+    }
     @media (max-width: $tablet) {
       text-align: center;
+      h3 {
+        font-size: 42px;
+      }
     }
   }
 

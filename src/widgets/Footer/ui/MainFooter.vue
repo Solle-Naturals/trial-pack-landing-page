@@ -273,7 +273,7 @@ export default {
       "termsAndConditions": "Terms & Conditions",
       "privacyAndSecurity":"Privacy & Security",
       "textSection": "* These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.",
-      "rights": "©2024 Solle Naturals. All Rights Reserved."
+      "rights": "©2025 Solle Naturals. All Rights Reserved."
     },
     "es":{
       "return": "Reembolsos/Devoluciones",
@@ -286,7 +286,7 @@ export default {
       "termsAndConditions": "Términos & Condiciones",
       "privacyAndSecurity":"Privacidad & Seguridad",
       "textSection": "* Estas declaraciones no han sido evaluadas por la Administración de Alimentos y Medicamentos. Estos productos no intentan diagnosticar, tratar, curar o prevenir ninguna enfermedad.",
-      "rights": "©2024 Solle Naturals. Derechos Reservados."
+      "rights": "©2025 Solle Naturals. Derechos Reservados."
     }
   }
   </i18n>

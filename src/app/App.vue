@@ -37,16 +37,17 @@ export default Vue.extend({
   },
   metaInfo() {
     return {
-      title: 'Solle Trial Reset Box',
+      title: '3 Day Reset Trial Box',
       meta: [
-        { property: 'og:title', content: 'Solle Trial Reset Box' },
+        { property: 'og:title', content: '3 Day Reset Trial Box' },
         {
           property: 'og:description',
-          content: 'Discover our Trial Reset Pack and its benefits.',
+          content: 'Discover our 3 Day Reset Trial Box and its benefits.',
         },
         {
           property: 'og:image',
-          content: 'https://trial-pack.sollenaturals.com/Solle_Naturals_Trial_Reset_Box.png',
+          content:
+            'https://trial-pack.sollenaturals.com/Solle_Naturals_Trial_Reset_Box.png',
         },
         {
           property: 'og:url',
