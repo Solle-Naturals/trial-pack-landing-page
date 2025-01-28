@@ -10,5 +10,5 @@ handlers:
     upload: dist/.*
   - url: .*
     script: auto
-includes:
-  - app_env.yaml
+# includes:
+#   - app_env.yaml
