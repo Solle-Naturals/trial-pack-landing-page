@@ -4,6 +4,12 @@ on:
   push:
     branches: ['dev']
 
+env:
+  NODE_ENV: development
+  PORT: 8080
+  VUE_APP_CHECKOUT_URL: ${{ vars.DEV_CHECKOUT_URL }}
+  VUE_APP_NAME: "3 Day Reset Trial box"
+
 jobs:
   checkout-build-auth-deploy:
     name: 'Checkout and Deploy'
@@ -15,6 +21,12 @@ jobs:
     steps:
       - id: 'checkout'
         uses: actions/checkout@v3
+        
+      - id: 'npm-install'
+        run: npm install
+
+      - id: 'npm-build'
+        run: npm run build
 
       - id: 'auth-with-gcp'
         uses: 'google-github-actions/auth@v1'
