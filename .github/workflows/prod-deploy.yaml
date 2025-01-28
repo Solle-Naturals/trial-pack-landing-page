@@ -19,7 +19,7 @@ jobs:
       - id: 'auth-with-gcp'
         uses: 'google-github-actions/auth@v1'
         with:
-          credentials_json: ${{ secrets.DEV_GCP_SA_KEY }}
+          credentials_json: ${{ secrets.PROD_GCP_SA_KEY }}
 
       - id: 'deploy'
         uses: 'google-github-actions/deploy-appengine@v2'
