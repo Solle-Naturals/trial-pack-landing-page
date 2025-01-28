@@ -1,15 +1,31 @@
 {
   "Header": {
-    "language": "Language"
+    "language": "Language",
+    "get_box": "Get your 3 Day Reset Trial box",
+    "country": "Country"
+  },
+  "Footer": {
+    "copyright": "©Copyright 2025 Solle Naturals LLC. All rights reserved.",
+    "info": "*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease."
   },
   "HomePage": {
     "Preview": {
-      "title": "Variety Trial Box",
-      "subtitle": "This box is a great way to dip your toes into the world of adaptogens before diving into a complete health program! The Variety Trial Box contains three individual servings of each of our five, best-selling adaptogenic drinks. It will give you the chance to experiment with each and figure out which serving method best suits you, as well as get a taste for what these powerful and potent formulas can add to your well-being.",
-      "buy": "Buy Now"
+      "title": "Level up your daily routine. Level up your life.",
+      "get_box": "Get your 3 Day Reset Trial box today"
+    },
+    "Help": {
+      "title": "Advanced therapeutic nutrition formulated to help you naturally re-establish physical and mental balance",
+      "stress_bold": "Stress support:",
+      "stress": "Each drink included in this package contains adaptogens, which help support a healthy stress response for both mind and body.",
+      "sustained_bold": "Sustained stamina:",
+      "sustained": "Adaptogens, along with other energizing herbs like yerba mate, help you maintain balanced energy levels throughout the day.",
+      "immune_bold": "Immune health:",
+      "immune": "A key characteristic of adaptogens is their ability to help the body modulate the immune system.",
+      "hair_bold": "Hair, skin & nails:",
+      "hair": "The dense nutrition provided in all the drinks, especially our plant-based collagen enhancer, SolleRoyal, result in stronger, healthier hair, skin and nails."
     },
     "Slider": {
-      "title": "See What's Inside",
+      "title": "See what's inside",
       "SolleVital": {
         "subtitle": "Daily detox + nutrition",
         "detoxing": "Detoxing",
@@ -24,7 +40,7 @@
         "alkalizing_text": "Chlorophyll helps balance pH levels in the body, which reduces acidity and promotes a feeling of overall wellness"
       },
       "SolleReNue": {
-        "subtitle": "Daily detox + nutrition",
+        "subtitle": "Centered Calm",
         "stressRelief": "Stress Relief",
         "stressRelief_text": "Contains adaptogens and other calming herbs to support a calm central nervous system.",
         "naturalSleepSupport": "Natural Sleep Support",
@@ -37,7 +53,7 @@
         "calmFocus_text": "Promotes calmness of body and mind, allowing you to re-center yourself and focus on the task ahead."
       },
       "SolleExcell": {
-        "subtitle": "Daily detox + nutrition",
+        "subtitle": "Vibrancy Enhanced",
         "libidoEndocrineSupport": "Libido + endocrine support",
         "libidoEndocrineSupport_text": "Three types of maca help support the entire endocrine system which helps support memory, libido, mood, prostate health and reproductive and skin health",
         "enhancedAlertness": "Enhanced alertness",
@@ -81,7 +97,9 @@
       }
     },
     "Video": {
-      "title": "Not your typical wellness company",
+      "title": "Not your typical wellness company"
+    },
+    "Cards": {
       "vegetarian": "Vegetarian",
       "glutenFree": "Gluten-free",
       "soyFree": "Soy-free",
@@ -91,17 +109,58 @@
       "nutFree": "Nut-free",
       "heavyMetals": "Free of heavy metals"
     },
+    "VarietyTrialBox": {
+      "title": "3 Day Reset Trial box",
+      "subtitle": "The 3 Day Reset Trial box contains three individual servings of each of our five, best-selling adaptogenic drinks to systematically transform your entire day, and with consistent use, your future.",
+      "second_subtitle": "<strong>You receive:</strong> 3 packets of Solle<b>Vital®</b>, Cinna<b>Mate®</b>, Solle<b>ReNue®</b>, Solle<b>Excell®</b>, and Solle<b>Royal™</b>, providing you with a powerful combination of nutrients to reset and rebalance the physical, mental and emotional imbalances that are common in today's modern society.",
+      "buy": "Buy Now"
+    },
     "Adaptogens": {
       "title": "Dip your toes into the world of adaptogens",
       "buy": "Buy Now"
     },
     "Comments": {
-      "title": "What people are saying",
+      "title": "9/10 people report experiencing positive health benefits",
       "comment_1": "I have been taking Solle Naturals products for 5 ½ years. It’s really a challenge to put all the goodness of the products in a quick review, because there are so many benefits. Everything is better for me….from better digestion, better mood, more energy, calmer mind, better response to stress, just to name a few. I can honestly say that I would never want to be without Solle Naturals products.",
       "comment_2": "Solle products have given me my life back. Before Solle Naturals was part of my health journey I was exhausted and anxious all the time. My digestion was completely messed up and stress levels were an all time high. Now I can manage stress and oncoming panic attacks with ease, I have energy to conquer all of my tasks and I don’t suffer from daily anxiety.",
       "comment_3": "Solle Naturals have helped me in so many ways.. I no longer need a cup of coffee to wake up or a glass of wine to fall asleep..I worry less and accomplish more..my hair and nails and stronger and longer my hormones are now in balance. I am happier and healthier because of making these small changes.",
       "comment_4": "I am a busy mom of 3 kids and of course deal with weight gain, lack of energy, intermittent sleep patterns, stress, you name it as a mom. However, I’d been lacking in caring for myself. Since beginning Solle, I no longer crave coffee and have supplemented it for my coffee. I also find myself having more energy without a 3pm crash. All the way around I’ve been quite pleased with what I’ve tried.",
       "comment_5": "With Solle, I have more energy, less pain, and a handle on anxiety/stress...a must for helping me get through stressful days."
+    },
+    "Amounts": {
+      "title": "Optimal amounts of hard-to get nutrients to improve your everyday and your long term well-being",
+      "trace": {
+        "title": "Trace minerals",
+        "text": "Trace minerals are power houses that play a vital role in the growth, development, and function of every cell in the body. They are needed for an efficient metabolism and healthy cell renewal."
+      },
+      "antioxidants": {
+        "title": "Antioxidants",
+        "text": "Antioxidants fight against environmental and oxidative stress and neutralize free radicals, promoting healthy aging and immune defense."
+      },
+      "adaptogens": {
+        "title": "Adaptogens",
+        "text": "Adaptogens promote resistance to mental and physical stressors and promote mental clarity, focus, and overall well-being."
+      },
+      "healthy_fats": {
+        "title": "Healthy fats",
+        "text": "Healthy fats create a sense of fullness, aid in hormonal function, memory and the absorption of specific nutrients."
+      }
+    },
+    "Secret": {
+      "title": "Our secret to success: we’re obsessed with quality",
+      "subtitle": " Confident, clean care from harvest to encapsulation",
+      "superior": {
+        "bold": "Superior ingredients:",
+        "text": "We understand that superior results come from superior ingredients. That's why we source our raw materials from trusted partners and test with independent laboratories around the globe who share our passion for excellence and commitment to purity."
+      },
+      "third": {
+        "bold": "Third-party testing:",
+        "text": "Each of our raw materials goes through an incoming raw material certification to check for purity, potency and identity to ensure that the final product will deliver the best results possible for you."
+      },
+      "solle_certain": {
+        "bold": "10-point SolleCertain™ Guarantee:",
+        "text": "Quality is an obsession for us. With decades of experience under our belt, we know that unparalleled results cannot come without unparalleled quality, so every product is backed by our SolleCertain Guarantee."
+      }
     }
   }
 }

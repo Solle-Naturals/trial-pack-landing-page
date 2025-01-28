@@ -15,13 +15,7 @@ export default defineComponent({
       type: String,
       default: 'slideDown',
       validator: (value: string) =>
-        [
-          'slideDown',
-          'slideLeft',
-          'opacity',
-          'leafLeft',
-          'leaftRight',
-        ].includes(value),
+        ['slideDown', 'slideLeft', 'opacity'].includes(value),
     },
     visible: {
       type: String,

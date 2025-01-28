@@ -46,7 +46,7 @@ export default {
     border-radius: toRem(4);
 
     @media (max-width: $mobile) {
-      width: toRem(280);
+      width: toRem(224);
     }
   }
 }

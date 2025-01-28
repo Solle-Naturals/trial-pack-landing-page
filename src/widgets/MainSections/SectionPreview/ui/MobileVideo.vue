@@ -1,0 +1,12 @@
+<template>
+  <video
+    crossorigin="anonymous"
+    playsinline
+    poster="../video/poster.png"
+    src="https://static.sollenaturals.com/files/1c6bc5e1-32ac-4d6c-aee1-fb70c7f380a9/Solle_Naturals_trial-pack-landing-mobile.mp4"
+    muted
+    loop
+    autoplay
+    preload="metadata"
+  />
+</template>

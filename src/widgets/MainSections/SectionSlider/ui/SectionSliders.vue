@@ -85,14 +85,11 @@ export default Vue.extend({
               :key="index"
             >
               <v-row class="slide" no-gutters>
-                <v-col class="slide__image">
-                  <img :src="slide.imageUrl" alt="Slide Image" />
-                </v-col>
                 <v-col class="slide__block">
                   <div class="slide__header">
-                    <h3 class="slide__title">
+                    <h2 class="slide__title">
                       {{ slide.title.text }}<b>{{ slide.title.strong }}</b>
-                    </h3>
+                    </h2>
                     <div class="slide__box">
                       <p class="slide__subtitle">
                         {{ t(`${slide.key}.${slide.subtitle}`) }}
@@ -142,6 +139,9 @@ export default Vue.extend({
                     </v-list-item>
                   </v-list>
                 </v-col>
+                <v-col class="slide__image">
+                  <img :src="slide.imageUrl" alt="Slide Image" />
+                </v-col>
               </v-row>
             </div>
           </div>
@@ -166,19 +166,20 @@ export default Vue.extend({
     position: relative;
 
     @media (max-width: $mobile) {
-      margin-top: toRem(40);
+      margin-top: toRem(30);
     }
   }
 }
 
 .slide {
   display: grid;
-  grid-template-columns: minmax(toRem(460), 1fr) 1.6fr;
+  grid-template-columns: 1.6fr minmax(toRem(460), 1fr);
   justify-content: space-between;
   column-gap: toRem(24);
 
   @media (max-width: $tablet) {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
     row-gap: toRem(8);
   }
 
@@ -198,8 +199,7 @@ export default Vue.extend({
   }
 
   &__block {
-    max-width: toRem(740);
-    margin-left: auto;
+    max-width: toRem(750);
 
     @media (max-width: $tablet) {
       margin: auto;
@@ -220,7 +220,7 @@ export default Vue.extend({
     }
 
     @media (max-width: $mobile) {
-      font-size: toRem(24);
+      font-size: toRem(20);
     }
 
     & > b {
@@ -238,12 +238,20 @@ export default Vue.extend({
     font-weight: 600;
     font-size: toRem(18);
     line-height: 150%; /* 27/18 */
+
+    @media (max-width: $mobile) {
+      font-size: toRem(16);
+    }
   }
 
   &__buttons {
     @include flexRow(center);
     column-gap: toRem(16);
     flex: 0 0 auto;
+
+    @media (max-width: $mobile) {
+      column-gap: toRem(8);
+    }
   }
 
   &__button {
@@ -257,6 +265,11 @@ export default Vue.extend({
       &:hover {
         filter: brightness(1.05);
       }
+    }
+
+    @media (max-width: $mobile) {
+      width: toRem(34);
+      height: toRem(34);
     }
 
     &-prev {
@@ -311,10 +324,14 @@ export default Vue.extend({
     }
 
     & > p {
-      font-weight: 500;
+      font-weight: 400;
 
       @media (max-width: $mobile) {
-        font-size: toRem(14);
+        font-size: toRem(12);
+      }
+
+      & strong {
+        font-weight: 500;
       }
     }
   }
@@ -326,7 +343,7 @@ export default Vue.extend({
 
 .sliders {
   &__bullets {
-    @include flexRow(center, flex-end);
+    @include flexRow(center, center);
     column-gap: toRem(8);
     margin-top: toRem(40);
 

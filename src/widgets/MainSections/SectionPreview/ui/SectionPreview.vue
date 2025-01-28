@@ -1,152 +1,118 @@
 <script lang="ts">
-import { isTablet } from '@/shared/lib';
-import { BaseContainer, BaseButton, BaseAnimation } from '@/shared/ui';
-import { useTranslation } from '@/app/i18n/hooks';
-import Preview from '../images/preview.png';
+import { defineComponent } from "vue";
+import { useTranslation } from "@/app/i18n/hooks";
+import { BaseContainer, BaseAnimation, BaseButton } from "@/shared/ui";
+import { isMobile, LINK_TO_BOX } from "@/shared/lib";
+import DesktopVideo from "./DesktopVideo.vue";
+import MobileVideo from "./MobileVideo.vue";
 
-export default {
+export default defineComponent({
   components: {
     BaseContainer,
-    BaseButton,
     BaseAnimation,
+    BaseButton,
+    DesktopVideo,
+    MobileVideo,
   },
   data() {
     return {
-      Preview,
-      price: '37.95',
+      LINK_TO_BOX,
+      isMobile,
+      t: useTranslation("HomePage.Preview"),
     };
   },
-  setup() {
-    return {
-      isTablet,
-    };
-  },
-  computed: {
-    t() {
-      return useTranslation('HomePage.Preview');
-    },
-    checkoutLink() {
-      const checkoutUrl =
-        process.env.VUE_APP_CHECKOUT_URL || 'https://checkout.sollenaturals.com';
-
-      return `${checkoutUrl}/?lang=en&country_id=185&order_type_id=40&products%5B1094%5D=1`;
-    },
-  },
-};
+});
 </script>
 
 <template>
   <section class="preview">
     <BaseContainer>
-      <div class="preview__wrapper">
-        <v-row class="preview__block" no-gutters>
-          <v-col :cols="12">
+      <v-row align="center" justify="center" no-gutters>
+        <v-col cols="12">
+          <div class="preview__content">
             <BaseAnimation :delay="300">
-              <h1>{{ t('title') }}</h1>
+              <h1 class="preview__title">{{ t("title") }}</h1>
             </BaseAnimation>
-          </v-col>
-          <v-col v-if="isTablet" :cols="12">
-            <BaseAnimation :delay="400">
-              <div class="preview__image">
-                <img src="../images/preview.png" alt="preview" />
-              </div>
+            <BaseAnimation :delay="600">
+              <BaseButton
+                class="preview__button"
+                as="a"
+                variant="second"
+                :href="LINK_TO_BOX"
+              >
+                {{ t("get_box") }}
+              </BaseButton>
             </BaseAnimation>
-          </v-col>
-          <v-col :cols="12">
-            <BaseAnimation :delay="500">
-              <p class="main-subtitle">{{ t('subtitle') }}</p>
-            </BaseAnimation>
-          </v-col>
-          <v-col :cols="12">
-            <BaseAnimation :delay="700">
-              <div class="preview__info">
-                <div v-if="!isTablet" class="preview__info_pc">
-                  <BaseButton as="a" :href="checkoutLink">{{
-                    t('buy')
-                  }}</BaseButton>
-                  <span class="preview__price">$ {{ price }}</span>
-                </div>
-                <div v-if="isTablet">
-                  <BaseButton
-                    as="a"
-                    :href="checkoutLink"
-                    class="preview__button"
-                  >
-                    {{ t('buy') }} $ {{ price }}
-                  </BaseButton>
-                </div>
-              </div>
-            </BaseAnimation>
-          </v-col>
-        </v-row>
-        <BaseAnimation :delay="300" variant="opacity" v-if="!isTablet">
-          <div class="preview__image">
-            <img :src="Preview" alt="preview" />
           </div>
-        </BaseAnimation>
-      </div>
+        </v-col>
+      </v-row>
     </BaseContainer>
+    <div class="preview__video">
+      <DesktopVideo v-if="!isMobile" />
+      <MobileVideo v-if="isMobile" />
+    </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
-@import 'src/app/assets/styles/variables.scss';
+@import "src/app/assets/styles/variables.scss";
 
 .preview {
-  padding-top: toRem(92);
-  @media (max-width: $mobile) {
-    padding-top: toRem(36);
-  }
+  position: relative;
+  @include flexColumn(center, center);
+  height: min(100vh, toRem(1080));
+  padding-top: 0;
 
-  &__wrapper {
-    display: grid;
-    grid-template-columns: minmax(toRem(464), 1fr) 1fr;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: toRem(24);
-
-    @media (max-width: $tablet) {
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
-  }
-
-  &__info {
-    margin-top: toRem(48);
+  &__content {
+    position: relative;
+    @include flexColumn(center, center);
+    row-gap: toRem(38);
+    text-align: center;
+    max-width: toRem(814);
+    margin: 0 auto $header_height;
+    z-index: $zIndex_1;
 
     @media (max-width: $mobile) {
-      margin-top: toRem(24);
-    }
-
-    &_pc {
-      @include flexRow(center);
-      column-gap: toRem(38);
+      row-gap: toRem(28);
     }
   }
 
-  &__block {
-    @media (max-width: $tablet) {
-      text-align: center;
+  &__title {
+    color: $white;
+  }
+
+  &__button {
+    font-size: toRem(24);
+
+    @media (max-width: $mobile) {
+      font-size: toRem(12);
     }
   }
 
-  &__price {
-    font-size: toRem(22);
-  }
+  &__video {
+    position: fixed;
+    left: 0;
+    top: $header_height;
+    width: 100%;
+    height: min(100vh, toRem(1080));
 
-  &__image {
-    text-align: center;
-
-    @media (max-width: $tablet) {
-      margin-top: toRem(24);
-    }
-
-    & img {
-      max-width: toRem(760);
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 100%;
-      height: auto;
-      aspect-ratio: 760 / 490;
-      object-fit: contain;
+      height: 100%;
+      background-color: #2e29304d;
+    }
+
+    & video {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       object-position: center;
     }
   }

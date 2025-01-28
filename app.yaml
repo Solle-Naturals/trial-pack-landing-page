@@ -5,8 +5,10 @@ handlers:
   - url: /
     static_files: dist/index.html
     upload: dist/index.html
-
-  - url: /
-    static_dir: dist
-includes:
-  - app_env_variables.yaml
+  - url: /(.*)
+    static_files: dist/\1
+    upload: dist/.*
+  - url: .*
+    script: auto
+# includes:
+#   - app_env.yaml

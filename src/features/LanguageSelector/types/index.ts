@@ -9,3 +9,13 @@ export interface ILanguageSelectorOption {
   label: string;
   items: ILanguageSelectorItem[];
 }
+
+export interface ICountrySelectorItem {
+  text: string;
+  value: number;
+}
+
+export interface ICountrySelectorOption {
+  label: string;
+  items: ICountrySelectorItem[];
+}

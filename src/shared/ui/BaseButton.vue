@@ -47,6 +47,10 @@ export default defineComponent({
   font-weight: 500;
   transition: all $transition;
 
+  @media (max-width: $mobile) {
+    font-size: toRem(16);
+  }
+
   &.base {
     color: $white;
     background-color: $accent;

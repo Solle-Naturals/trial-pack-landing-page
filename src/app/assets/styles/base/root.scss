@@ -9,15 +9,17 @@
   --white: #fff;
   --grey: #d6d6d6;
   --grey-light: #efefef;
+  --parchment-cream: #eceade;
   --yellow: #fec600;
   --green-dark: #c0df163b;
 
   --box-shadow-color: #83838340;
-  --header-height: 3.5rem;
+  --header-height: 68px;
   --padding-сontainer-minus: -2.75rem;
   --padding-сontainer: 2.75rem;
 
   @media (max-width: $mobile) {
+    --header-height: 42px;
     --padding-сontainer-minus: -1.5rem;
     --padding-сontainer: 1.5rem;
   }

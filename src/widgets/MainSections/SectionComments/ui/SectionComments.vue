@@ -4,7 +4,9 @@ import Swiper from 'swiper';
 import { Pagination, Autoplay } from 'swiper/modules';
 import { BaseContainer, BaseRating } from '@/shared/ui';
 import Background from '../images/commnet-bg.png';
+import Wave from '../images/wave.png';
 import { useTranslation } from '@/app/i18n/hooks';
+import { isMobile } from '@/shared/lib';
 
 interface IComment {
   text: string;
@@ -21,8 +23,10 @@ export default Vue.extend({
     return {
       t: useTranslation('HomePage.Comments'),
       Background,
+      Wave,
+      isMobile,
       COMMENTS: [
-        { text: 'comment_1', name: 'Tanya Johnson', rating: 5 },
+        { text: 'comment_1', name: 'Tanya J, Brand Specialist', rating: 5 },
         { text: 'comment_2', name: 'Sara B', rating: 5 },
         { text: 'comment_3', name: 'Karen S', rating: 5 },
         { text: 'comment_4', name: 'Laura U', rating: 5 },
@@ -69,45 +73,50 @@ export default Vue.extend({
 
 <template>
   <section class="comments">
-    <BaseContainer>
-      <v-row no-gutters class="comments__header">
-        <v-col>
-          <h2>{{ t('title') }}</h2>
-        </v-col>
-      </v-row>
-      <div class="comments__content">
-        <div class="comments__swiper swiper" ref="swiper">
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide"
-              v-for="(comment, index) in COMMENTS"
-              :key="index"
-            >
-              <v-card class="comment" outlined>
-                <div class="comment__body">
-                  <p class="comment__text">{{ t(comment.text) }}</p>
-                </div>
-                <div class="comment__footer">
-                  <p class="comment__name">{{ comment.name }}</p>
-                  <div class="comment__rating">
-                    <BaseRating :value="comment.rating" />
+    <div class="comments__wave">
+      <img :src="Wave" alt="wave" />
+    </div>
+    <div class="comments__wrapper">
+      <BaseContainer>
+        <v-row no-gutters class="comments__header">
+          <v-col>
+            <h3>{{ t('title') }}</h3>
+          </v-col>
+        </v-row>
+        <div class="comments__content">
+          <div class="comments__swiper swiper" ref="swiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                v-for="(comment, index) in COMMENTS"
+                :key="index"
+              >
+                <v-card class="comment" outlined>
+                  <div class="comment__body">
+                    <p class="comment__text">{{ t(comment.text) }}</p>
                   </div>
-                </div>
-                <div class="comment__bg">
-                  <v-img
-                    :src="Background"
-                    alt="background"
-                    width="130"
-                    height="223"
-                  />
-                </div>
-              </v-card>
+                  <div class="comment__footer">
+                    <p class="comment__name">{{ comment.name }}</p>
+                    <div class="comment__rating">
+                      <BaseRating :value="comment.rating" />
+                    </div>
+                  </div>
+                  <div class="comment__bg">
+                    <v-img
+                      :src="Background"
+                      alt="background"
+                      width="130"
+                      height="223"
+                    />
+                  </div>
+                </v-card>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-      </div>
-    </BaseContainer>
+      </BaseContainer>
+    </div>
   </section>
 </template>
 
@@ -115,22 +124,37 @@ export default Vue.extend({
 @import 'src/app/assets/styles/variables.scss';
 
 .comments {
-  padding-bottom: toRem(80);
-  background-color: #f6f5ef;
+  &__wave {
+    & img {
+      width: 100%;
+      aspect-ratio: 1604 / 137;
+    }
+  }
 
-  @media (max-width: $mobile) {
-    padding-bottom: toRem(40);
+  &__wrapper {
+    position: relative;
+    padding-bottom: toRem(80);
+    background-color: $parchment_cream;
+
+    @media (max-width: $mobile) {
+      padding-bottom: toRem(40);
+    }
   }
 
   &__header {
     text-align: center;
+    padding-top: toRem(55);
+
+    @media (max-width: $mobile) {
+      padding-top: toRem(32);
+    }
   }
 
   &__content {
     margin-top: toRem(80);
 
     @media (max-width: $tablet) {
-      margin-top: toRem(40);
+      margin-top: toRem(30);
     }
   }
 
@@ -151,7 +175,7 @@ export default Vue.extend({
   @include adaptiveValue('height', 384, 564, 1350, 768, 1);
 
   @media (max-width: $mobile) {
-    @include adaptiveValue('height', 260, 420, 767, 375, 1);
+    @include adaptiveValue('height', 260, 380, 767, 375, 1);
   }
 
   &__body {
@@ -166,6 +190,12 @@ export default Vue.extend({
     }
   }
 
+  &__text {
+    @media (max-width: $mobile) {
+      font-size: toRem(12);
+    }
+  }
+
   &__footer {
     padding: toRem(30) toRem(26);
 
@@ -176,6 +206,10 @@ export default Vue.extend({
 
   &__name {
     font-weight: 500;
+
+    @media (max-width: $mobile) {
+      font-size: toRem(14);
+    }
   }
 
   &__rating {

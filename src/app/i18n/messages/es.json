@@ -1,12 +1,28 @@
 {
   "Header": {
-    "language": "Idioma"
+    "language": "Idioma",
+    "get_box": "Obtén tu Paquete Reinicio-3 dias",
+    "country": "País"
+  },
+  "Footer": {
+    "copyright": "©Copyright 2025 Solle Naturals LLC. All rights reserved.",
+    "info": "*Estas declaraciones no han sido evaluadas por la Administración de Alimentos y Medicamentos. Este producto no está destinado a diagnosticar, tratar, curar o prevenir ninguna enfermedad."
   },
   "HomePage": {
     "Preview": {
-      "title": "Paquete de prueba",
-      "subtitle": "¡Este paquete es una excelente manera de introducirte en el mundo de los adaptógenos antes de sumergirte en un programa de salud completo! El Paquete de Prueba contiene tres porciones individuales de cada una de nuestras cinco bebidas adaptogénicas más vendidas. Te dará la oportunidad de experimentar con cada una y averiguar qué método de servicio te conviene más, así como obtener una idea de lo que estas fórmulas potentes y poderosas pueden agregar a tu bienestar.",
-      "buy": "Comprar ahora"
+      "title": "Eleva tu rutina diaria. Eleva tu vida.",
+      "get_box": "Obtén tu Paquete Reinicio-3 dias"
+    },
+    "Help": {
+      "title": "Nutrición terapéutica formulada para ayudarte a restablecer de manera natural el equilibrio físico y mental.",
+      "stress_bold": "Apoyo contra el estrés:",
+      "stress": "Cada bebida incluida en este paquete contiene adaptógenos, que ayudan a respaldar una respuesta saludable al estrés tanto para la mente como para el cuerpo.",
+      "sustained_bold": "Resistencia sostenida:",
+      "sustained": "Los adaptógenos, junto con otras hierbas energizantes como la yerba mate, te ayudan a mantener niveles de energía equilibrados durante todo el día.",
+      "immune_bold": "Salud inmunológica:",
+      "immune": "Una característica clave de los adaptógenos es su capacidad para ayudar al cuerpo a modular el sistema inmunológico.",
+      "hair_bold": "Cabello, piel y uñas:",
+      "hair": "La nutrición densa proporcionada en todas las bebidas, especialmente el potenciador de colágeno, SolleRoyal, resulta en un cabello, piel y uñas más fuertes y saludables."
     },
     "Slider": {
       "title": "Mira lo que hay dentro",
@@ -24,8 +40,8 @@
         "alkalizing_text": "La clorofila equilibra los niveles de pH en el cuerpo, lo cual reduce la acidez y promueve un sentimiento de bienestar general."
       },
       "SolleReNue": {
-        "subtitle": "Equilibrio diario + nutrición",
-        "stressRelief": "Alivio del estré",
+        "subtitle": "Calma centrada",
+        "stressRelief": "Alivio del estrés",
         "stressRelief_text": "Contiene adaptógenos y otras hierbas calmantes para tranquilizar el sistema nervioso central.",
         "naturalSleepSupport": "Apoyo natural para dormir",
         "naturalSleepSupport_text": "Ayuda a relajar el cuerpo y la mente preparándolos para un sueño más reparador.",
@@ -37,7 +53,7 @@
         "calmFocus_text": "Promueve calma de cuerpo y mente, para volver a centrarte y concentrarte en la tarea a realizar."
       },
       "SolleExcell": {
-        "subtitle": "Equilibrio diario + nutrición",
+        "subtitle": "Vitalidad Mejorada",
         "libidoEndocrineSupport": "Libido + apoyo endocrino",
         "libidoEndocrineSupport_text": "Tres tipos de maca que ayudan a respaldar todo el sistema endocrino, dando apoyo a la memoria, la libido, el estado de ánimo, la salud de la próstata y la reproductiva y la salud de la piel.",
         "enhancedAlertness": "Estado de alerta mejorado",
@@ -67,7 +83,7 @@
         "mentalFocus_text": "La yerba mate, el nopal y la canela son reconocidos por su capacidad para ayudar a mejorar el enfoque mental."
       },
       "SolleRoyal": {
-        "subtitle": "Costura de colágeno",
+        "subtitle": "Colágeno a tu medida",
         "hairSkinNails": "Cabello, piel + uñas",
         "hairSkinNails_text": "Ayuda a promover la salud y fortaleza del cabello, la piel y las uñas.",
         "bonesConnectiveTissues": "Huesos + tejido conectivo",
@@ -81,7 +97,9 @@
       }
     },
     "Video": {
-      "title": "No es la típica empresa de wellness",
+      "title": "No somos la típica empresa de bienestar"
+    },
+    "Cards": {
       "vegetarian": "Vegetariano",
       "glutenFree": "Sin-Gluten",
       "soyFree": "Sin-Soya",
@@ -91,17 +109,58 @@
       "nutFree": "Sin-Nueces",
       "heavyMetals": "Pruebas por terceros"
     },
+    "VarietyTrialBox": {
+      "title": "Paquete Reinicio-3 dias",
+      "subtitle": "El Paquete Reinicio-3 dias contiene tres porciones individuales de cada una de nuestras cinco bebidas adaptogénicas más vendidas para transformar sistemáticamente todo tu día, y con su uso constante, también transformará tu futuro.",
+      "second_subtitle": "<strong>Recibes:</strong> 3 paquetes de Solle<b>Vital®</b>, Cinna<b>Mate®</b>, Solle<b>ReNue®</b>, Solle<b>Excell®</b> y Solle<b>Royal™</b>, que te proporcionan una poderosa combinación de nutrientes para restablecer el equilibrio físico, mental y emocional tan necesario en la sociedad moderna actual.",
+      "buy": "Comprar Ahora"
+    },
     "Adaptogens": {
       "title": "Introducirte en el mundo de los adaptógenos",
       "buy": "Comprar ahora"
     },
     "Comments": {
-      "title": "Reseñas",
+      "title": "9/10 personas informan experimentar beneficios positivos de salud",
       "comment_1": "He estado tomando productos Solle Naturals durante 5 años y medio. Es un verdadero desafío mencionar todas las bondades de los productos en una breve revisión, porque tienen muchos beneficios. Todo es mejor para mí... desde tener mejor digestión, la mente más tranquila, mejor respuesta al estrés, solo por nombrar algunos. Puedo decir con total honestidad que nunca querría estar sin los productos Solle Naturals.",
       "comment_2": "Los productos Solle me han devuelto la vida. Antes de que Solle Naturals fuera parte de mi jornada de salud, estaba exhausta y ansiosa todo el tiempo. Mi digestión estaba completamente mal y los niveles de estrés estaban en su punto más alto. Ahora, puedo manejar mejor el estrés, las dificultades, y los ataques de pánico. Tengo energía para superar todas mis tareas y no sufro de ansiedad diaria.",
       "comment_3": "SolleNaturals me ha ayudado de muchas maneras... Ya no necesito una taza de café para despertarme o una copa de vino para conciliar el sueño... Me preocupo menos y logro hacer más... mi cabello y mis uñas están fuertes y largas, y mis hormonas están están en equilibrio. Soy más feliz y saludable gracias a estos pequeños cambios.",
-      "comment_4": "Soy una madre ocupada con 3 hijos y, por supuesto, lucho con aumento de peso, falta de energía, patrones de sueño intermitentes, estrés, y todo lo que una madre sobrelleva. Pero, me faltaba cuidar de mí misma. Desde que comencé con Solle, ya no siento antojo de tomar café, y lo he suplementado. También encuentro que tengo más energía sin sentir un bajón a las 3:00 pm. En general, estoy bastante satisfecha con lo que he probad.",
+      "comment_4": "Soy una madre ocupada con 3 hijos y, por supuesto, lucho con aumento de peso, falta de energía, patrones de sueño intermitentes, estrés, y todo lo que una madre sobrelleva. Pero, me faltaba cuidar de mí misma. Desde que comencé con Solle, ya no siento antojo de tomar café, y lo he suplementado. También encuentro que tengo más energía sin sentir un bajón a las 3:00 pm. En general, estoy bastante satisfecha con lo que he probado.",
       "comment_5": "Con Solle, tengo más energía, menos dolor y controlo la ansiedad y el estrés... lo cual es imprescindible para ayudarme a superar los días estresantes."
+    },
+    "Amounts": {
+      "title": "Cantidades óptimas de nutrientes difíciles de obtener para mejorar tu bienestar diario y a largo plazo.",
+      "trace": {
+        "title": "Minerales traza",
+        "text": "Los minerales traza son potencias que juegan un papel vital en el crecimiento, desarrollo y función de cada célula en el cuerpo. Se necesitan para un metabolismo eficiente y una renovación celular saludable."
+      },
+      "antioxidants": {
+        "title": "Antioxidantes",
+        "text": "Los antioxidantes luchan contra el estrés ambiental y oxidativo y neutralizan los radicales libres, promoviendo un envejecimiento saludable y defensa inmunológica."
+      },
+      "adaptogens": {
+        "title": "Adaptógenos",
+        "text": "Los adaptógenos promueven resistencia a los factores de estrés mental y físico y promueven la claridad mental, el enfoque y el bienestar general."
+      },
+      "healthy_fats": {
+        "title": "Grasas saludables",
+        "text": "Las grasas saludables crean una sensación de saciedad, ayudan en la función hormonal, la memoria y la absorción de nutrientes específicos."
+      }
+    },
+    "Secret": {
+      "title": "Nuestro secreto para el éxito:",
+      "subtitle": "estamos obsesionados con la calidad",
+      "superior": {
+        "bold": "Ingredientes superiores:",
+        "text": "Entendemos que los resultados superiores provienen de ingredientes superiores. Es por eso que obtenemos nuestras materias primas de socios de confianza y realizamos pruebas con laboratorios independientes alrededor del mundo que comparten nuestra pasión por la excelencia y el compromiso con la pureza."
+      },
+      "third": {
+        "bold": "Pruebas de terceros:",
+        "text": "Cada una de nuestras materias primas pasa por una certificación de materia prima entrante para verificar su pureza, potencia e identidad, asegurando que el producto final te brindará los mejores resultados posibles."
+      },
+      "solle_certain": {
+        "bold": "Garantía SolleCertain™ de 10 puntos:",
+        "text": "La calidad es una obsesión para nosotros. Con décadas de experiencia a nuestro favor, sabemos que los resultados inigualables no pueden venir sin una calidad inigualable, por lo que cada producto está respaldado por nuestra Garantía SolleCertain."
+      }
     }
   }
 }
