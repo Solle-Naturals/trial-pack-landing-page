@@ -4,6 +4,12 @@ on:
   push:
     branches: ['main']
 
+env:
+  NODE_ENV: production
+  PORT: 8080
+  VUE_APP_CHECKOUT_URL: ${{ vars.PROD_CHECKOUT_URL }}
+  VUE_APP_NAME: '3 Day Reset Trial box'
+
 jobs:
   checkout-build-auth-deploy:
     name: 'Checkout and Deploy'
@@ -16,6 +22,12 @@ jobs:
       - id: 'checkout'
         uses: actions/checkout@v3
 
+      - id: 'npm-install'
+        run: npm install
+
+      - id: 'npm-build'
+        run: npm run build
+
       - id: 'auth-with-gcp'
         uses: 'google-github-actions/auth@v1'
         with:
@@ -27,12 +39,12 @@ jobs:
           project_id: solle-web
           deliverables: app.yaml
           build_env_vars: |-
-            NODE_ENV=development
+            NODE_ENV=production
             PORT=8080
             VUE_APP_CHECKOUT_URL=${{ vars.PROD_CHECKOUT_URL }}
             VUE_APP_NAME="3 Day Reset Trial box"
           env_vars: |-
-            NODE_ENV=development
+            NODE_ENV=production
             PORT=8080
             VUE_APP_CHECKOUT_URL=${{ vars.PROD_CHECKOUT_URL }}
             VUE_APP_NAME="3 Day Reset Trial box"
