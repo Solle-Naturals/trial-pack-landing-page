@@ -1,5 +1,5 @@
-runtime: nodejs18
-service: "trial-pack"
+runtime: nodejs22
+service: 'trial-pack'
 instance_class: F1
 handlers:
   - url: /
@@ -10,5 +10,3 @@ handlers:
     upload: dist/.*
   - url: .*
     script: auto
-# includes:
-#   - app_env.yaml
