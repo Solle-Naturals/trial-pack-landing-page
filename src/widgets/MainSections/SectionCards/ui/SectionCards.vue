@@ -9,8 +9,9 @@ import SoyFree from '../images/soy-free.png';
 import NonGmo from '../images/non-gmo.png';
 import NoFillers from '../images/no-fillers.png';
 import MsgFree from '../images/msg-free.png';
-import NutFree from '../images/nut-free.png';
+// import NutFree from '../images/nut-free.png';
 import HeavyMetals from '../images/heavy-metals.png';
+import ThirdParty from '../images/3rd_Party_Tested_Icon.png';
 
 interface ICard {
   title: string;
@@ -50,13 +51,17 @@ export default defineComponent({
           title: 'MsgFree',
           image: MsgFree,
         },
-        {
-          title: 'nutFree',
-          image: NutFree,
-        },
+        // {
+        //   title: 'nutFree',
+        //   image: NutFree,
+        // },
         {
           title: 'heavyMetals',
           image: HeavyMetals,
+        },
+        {
+          title: 'thirdParty',
+          image: ThirdParty,
         },
       ] as ICard[],
     };

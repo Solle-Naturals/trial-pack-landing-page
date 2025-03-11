@@ -6,6 +6,9 @@ import TraceMinerals from "../images/trace-minerals.png";
 import Antioxidants from "../images/antioxidants.png";
 import Adaptogens from "../images/adaptogens.png";
 import HealthyFats from "../images/healthy-fats.png";
+import YellowSplitPea from "../images/yellowSplitPea.png";
+import SeaSalt from "../images/seaSalt.png";
+
 
 export default {
   components: {
@@ -28,6 +31,8 @@ export default {
           title: "healthy_fats.title",
           text: "healthy_fats.text",
         },
+        { img: YellowSplitPea, title: "aminoacids.title", text: "aminoacids.text" },
+        { img: SeaSalt, title: "electrolytes.title", text: "electrolytes.text" },
       ],
     };
   },
@@ -46,7 +51,7 @@ export default {
             <div class="item__box">
               <BaseAnimation :delay="index * 200">
                 <span class="item__title">{{ t(card.title) }}</span>
-                <p class="item__text">{{ t(card.text) }}</p>
+                <p class="item__text" v-html="t(card.text)"></p>
               </BaseAnimation>
             </div>
             <div class="item__img">

@@ -5,6 +5,7 @@ import Slide_2 from '../images/slide-02.png';
 import Slide_3 from '../images/slide-03.png';
 import Slide_4 from '../images/slide-04.png';
 import Slide_5 from '../images/slide-05.png';
+import Slide_6 from '../images/slide-06.png';
 
 export const SLIDERS: ISlide[] = [
   {
@@ -171,6 +172,41 @@ export const SLIDERS: ISlide[] = [
       {
         title: 'weightManagement',
         text: 'weightManagement_text',
+      },
+    ],
+  },
+  {
+    key: 'SolleComplete',
+    title: {
+      text: 'Solle',
+      strong: 'Complete®',
+    },
+    subtitle: 'subtitle',
+    imageUrl: Slide_6,
+    items: [
+      {
+        title: 'muscleSupport',
+        text: 'muscleSupport_text',
+      },
+      {
+        title: 'hydration',
+        text: 'hydration_text',
+      },
+      {
+        title: 'energy',
+        text: 'energy_text',
+      },
+      {
+        title: 'metabolicSupport',
+        text: 'metabolicSupport_text',
+      },
+      {
+        title: 'gutHealth',
+        text: 'gutHealth_text',
+      },
+      {
+        title: 'mentalSharpness',
+        text: 'mentalSharpness_text',
       },
     ],
   },

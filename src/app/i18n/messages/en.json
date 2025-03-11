@@ -1,7 +1,7 @@
 {
   "Header": {
     "language": "Language",
-    "get_box": "Get your 3 Day Reset Trial box",
+    "get_box": "Get your trial box",
     "country": "Country"
   },
   "Footer": {
@@ -11,7 +11,7 @@
   "HomePage": {
     "Preview": {
       "title": "Level up your daily routine. Level up your life.",
-      "get_box": "Get your 3 Day Reset Trial box today"
+      "get_box": "Get your trial box today"
     },
     "Help": {
       "title": "Advanced therapeutic nutrition formulated to help you naturally re-establish physical and mental balance",
@@ -22,7 +22,9 @@
       "immune_bold": "Immune health:",
       "immune": "A key characteristic of adaptogens is their ability to help the body modulate the immune system.",
       "hair_bold": "Hair, skin & nails:",
-      "hair": "The dense nutrition provided in all the drinks, especially our plant-based collagen enhancer, SolleRoyal, result in stronger, healthier hair, skin and nails."
+      "hair": "The dense nutrition provided in all the drinks, especially our plant-based collagen enhancer, SolleRoyal, result in stronger, healthier hair, skin and nails.",
+      "metabolic_bold": "Metabolic support:",
+      "metabolic": "Adaptogens can bolster metabolic function. Yerba mate has been extensively studied for its support of healthy weight and blood sugar levels, as well as increased GLP-1 levels."
     },
     "Slider": {
       "title": "See what's inside",
@@ -94,6 +96,21 @@
         "immunity_text": "Includes a variety of dense nutrition, including vitamin C, to support a healthy immune system",
         "weightManagement": "Weight management",
         "weightManagement_text": "Contains 9 grams of protein and less than 1 gram of sugar per serving"
+      },
+      "SolleComplete": {
+        "subtitle": "Protein Plus",
+        "muscleSupport": "Muscle support",
+        "muscleSupport_text": "18g of plant protein in every serving with all the essential amino acids",
+        "hydration": "Hydration",
+        "hydration_text": "premium sea salt blend provides electrolytes in an amount similar to a full dose hydration drink",
+        "energy": "Energy",
+        "energy_text": "Each serving has 24mg of caffeine from yerba mate in addition to five adaptogens that help balance and maintain energy levels throughout the day",
+        "metabolicSupport": "Metabolic support",
+        "metabolicSupport_text": "Yerba mate has also been extensively studied for its support of healthy weight and blood sugar levels, as well as increased GLP-1 levels",
+        "gutHealth": "Gut health",
+        "gutHealth_text": "Prebiotics, probiotics, fiber, and digestive enzymes and herbs help build a healthy microbiome",
+        "mentalSharpness": "Mental sharpness",
+        "mentalSharpness_text": "Brain-boosters like ginkgo biloba and MCT oil from coconut help optimize and power brain cell performance"
       }
     },
     "Video": {
@@ -104,15 +121,16 @@
       "glutenFree": "Gluten-free",
       "soyFree": "Soy-free",
       "nonGmo": "Non-GMO",
-      "noFillers": "No fillers or artificial ingredients",
+      "noFillers": "Nothing Artificial",
       "MsgFree": "MSG-free",
       "nutFree": "Nut-free",
-      "heavyMetals": "Free of heavy metals"
+      "heavyMetals": "Free of heavy metals",
+      "thirdParty": "3rd party tested"
     },
     "VarietyTrialBox": {
-      "title": "3 Day Reset Trial box",
-      "subtitle": "The 3 Day Reset Trial box contains three individual servings of each of our five, best-selling adaptogenic drinks to systematically transform your entire day, and with consistent use, your future.",
-      "second_subtitle": "<strong>You receive:</strong> 3 packets of Solle<b>Vital®</b>, Cinna<b>Mate®</b>, Solle<b>ReNue®</b>, Solle<b>Excell®</b>, and Solle<b>Royal™</b>, providing you with a powerful combination of nutrients to reset and rebalance the physical, mental and emotional imbalances that are common in today's modern society.",
+      "title": "Try Our Trial Box",
+      "subtitle": "The Trial Box contains three individual servings of our four original drinks, and one packet of our plant-based collagen enhancer, along with one packet of each of our two plant-protein flavors.",
+      "second_subtitle": "This Trial Box provides the perfect opportunity to experiment with all the different drinks and figure out how and when you like to take them. It also allows you to get a glimpse of the unique benefits of each formula. However, remember that this is a therapeutic, nutritional approach. So while some benefits are noticeable from day one, you’ll notice the biggest differences with 3+ months of consistent use!",
       "buy": "Buy Now"
     },
     "Adaptogens": {
@@ -144,10 +162,18 @@
       "healthy_fats": {
         "title": "Healthy fats",
         "text": "Healthy fats create a sense of fullness, aid in hormonal function, memory and the absorption of specific nutrients."
+      },
+      "aminoacids": {
+        "title": "Essential amino acids",
+        "text": "There’s 18g of protein from yellow split pea in each packet of Solle<b>Complete</b> and 9g in Solle<b>Royal</b> to support healthy muscle, hair, skin, and nails."
+      },
+      "electrolytes": {
+        "title": "Electrolytes",
+        "text": "Solle<b>Complete</b> contains a premium sea salt blend that provides electrolytes in a dose comparable to that of a full size hydration drink."
       }
     },
     "Secret": {
-      "title": "Our secret to success: we’re obsessed with quality",
+      "title": "Our secret to success: we’re <i>obsessed</i> with quality",
       "subtitle": " Confident, clean care from harvest to encapsulation",
       "superior": {
         "bold": "Superior ingredients:",

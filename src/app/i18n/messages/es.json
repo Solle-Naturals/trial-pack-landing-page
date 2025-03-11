@@ -1,7 +1,7 @@
 {
   "Header": {
     "language": "Idioma",
-    "get_box": "Obtén tu Paquete Reinicio 3-dias",
+    "get_box": "Obtén tu Paquete Prueba",
     "country": "País"
   },
   "Footer": {
@@ -11,7 +11,7 @@
   "HomePage": {
     "Preview": {
       "title": "Eleva tu rutina diaria. Eleva tu vida.",
-      "get_box": "Obtén tu Paquete Reinicio 3-dias"
+      "get_box": "Obtén tu Paquete Prueba hoy"
     },
     "Help": {
       "title": "Nutrición terapéutica formulada para ayudarte a restablecer de manera natural el equilibrio físico y mental.",
@@ -22,7 +22,9 @@
       "immune_bold": "Salud inmunológica:",
       "immune": "Una característica clave de los adaptógenos es su capacidad para ayudar al cuerpo a modular el sistema inmunológico.",
       "hair_bold": "Cabello, piel y uñas:",
-      "hair": "La nutrición densa proporcionada en todas las bebidas, especialmente el potenciador de colágeno, SolleRoyal, resulta en un cabello, piel y uñas más fuertes y saludables."
+      "hair": "La nutrición densa proporcionada en todas las bebidas, especialmente el potenciador de colágeno, SolleRoyal, resulta en un cabello, piel y uñas más fuertes y saludables.",
+      "metabolic_bold": "Apoyo metabólico:",
+      "metabolic": "Los adaptógenos pueden reforzar la función metabólica. La yerba mate ha sido ampliamente estudiada por sus beneficios sobre el peso saludable y los niveles de azúcar en la sangre, así como por el aumento de los niveles de GLP-1."
     },
     "Slider": {
       "title": "Mira lo que hay dentro",
@@ -94,6 +96,21 @@
         "immunity_text": "Contiene una variedad de nutrientes densos, incluyendo la vitamina C para apoyar un sistema inmunológico más saludable.",
         "weightManagement": "Control de peso",
         "weightManagement_text": "Contiene 9 gramos de proteína y menos de 1 gramo de azúcar por porción."
+      },
+      "SolleComplete": {
+        "subtitle": "Proteína Plus",
+        "muscleSupport": "Apoyo muscular",
+        "muscleSupport_text": "18g de proteína vegetal en cada porción con todos los aminoácidos esenciales.",
+        "hydration": "Hidratación",
+        "hydration_text": "La mezcla de sal marina de primera calidad proporciona electrolitos en una cantidad similar a la dosis completa de una bebida hidratante.",
+        "energy": "Energía",
+        "energy_text": "Cada porción contiene 24 mg de cafeína de yerba mate, además de cinco adaptógenos que ayudan a equilibrar y a mantener los niveles de energía durante todo el día.",
+        "metabolicSupport": "Apoyo metabólico",
+        "metabolicSupport_text": "La yerba mate también ha sido ampliamente estudiada por su apoyo a un peso saludable y a los niveles de azúcar en sangre, así como por el aumento de los niveles de GLP-1.",
+        "gutHealth": "Salud intestinal",
+        "gutHealth_text": "Los prebióticos, probióticos, fibra, enzimas digestivas y hierbas ayudan a construir un microbioma saludable.",
+        "mentalSharpness": "Agudeza mental",
+        "mentalSharpness_text": "Los potenciadores cerebrales como el ginkgo biloba y el aceite MCT de coco ayudan a optimizar el rendimiento de las células cerebrales."
       }
     },
     "Video": {
@@ -104,15 +121,16 @@
       "glutenFree": "Sin-Gluten",
       "soyFree": "Sin-Soya",
       "nonGmo": "Sin-OGM",
-      "noFillers": "Sin Aditivos o Ingredientes Artificiales",
+      "noFillers": "Nada Artificial",
       "MsgFree": "Sin-GMS",
       "nutFree": "Sin-Nueces",
-      "heavyMetals": "Pruebas por terceros"
+      "heavyMetals": "Libre de metales pesados",
+      "thirdParty": "Pruebas por terceros"
     },
     "VarietyTrialBox": {
-      "title": "Paquete Reinicio 3-dias",
-      "subtitle": "El Paquete Reinicio 3-dias contiene tres porciones individuales de cada una de nuestras cinco bebidas adaptogénicas más vendidas para transformar sistemáticamente todo tu día, y con su uso constante, también transformará tu futuro.",
-      "second_subtitle": "<strong>Recibes:</strong> 3 paquetes de Solle<b>Vital®</b>, Cinna<b>Mate®</b>, Solle<b>ReNue®</b>, Solle<b>Excell®</b> y Solle<b>Royal™</b>, que te proporcionan una poderosa combinación de nutrientes para restablecer el equilibrio físico, mental y emocional tan necesario en la sociedad moderna actual.",
+      "title": "Prueba nuestro Paquete de Muestras",
+      "subtitle": "El paquete de Muestras contiene tres sobres individuales de nuestras cuatro bebidas principales, un sobre de nuestro potenciador de colágeno y un sobre de cada sabor de nuestra proteína vegetal.",
+      "second_subtitle": "Este paquete de prueba ofrece la oportunidad perfecta para experimentar con todas las diferentes bebidas y descubrir cómo y cuándo te guste tomarlas. También te permite echar un vistazo a los beneficios únicos de cada fórmula. Recuerda que se trata de un enfoque terapéutico y nutricional. Por lo tanto, si bien algunos beneficios se notan desde el primer día, notarás mayores diferencias con más de 3 meses de uso constante.",
       "buy": "Comprar Ahora"
     },
     "Adaptogens": {
@@ -144,11 +162,19 @@
       "healthy_fats": {
         "title": "Grasas saludables",
         "text": "Las grasas saludables crean una sensación de saciedad, ayudan en la función hormonal, la memoria y la absorción de nutrientes específicos."
+      },
+      "aminoacids": {
+        "title": "Aminoácidos esenciales",
+        "text": "Hay 18g de proteína de guisante amarillo en cada bolsa de Solle<b>Complete</b> y 9g en el Solle<b>Royal</b> para favorecer la salud de los músculos, el cabello, la piel y las uñas."
+      },
+      "electrolytes": {
+        "title": "Electrolitos",
+        "text": "Solle<b>Complete</b> contiene una mezcla de sal marina de primera calidad que proporciona electrolitos en una cantidad similar a la dosis completa de una bebida hidratante."
       }
     },
     "Secret": {
-      "title": "Nuestro secreto para el éxito:",
-      "subtitle": "estamos obsesionados con la calidad",
+      "title": "El secreto de nuestro éxito: <i>obsesión</i> por la calidad",
+      "subtitle": "Confiable, limpio desde la cosecha hasta la encapsulación",
       "superior": {
         "bold": "Ingredientes superiores:",
         "text": "Entendemos que los resultados superiores provienen de ingredientes superiores. Es por eso que obtenemos nuestras materias primas de socios de confianza y realizamos pruebas con laboratorios independientes alrededor del mundo que comparten nuestra pasión por la excelencia y el compromiso con la pureza."

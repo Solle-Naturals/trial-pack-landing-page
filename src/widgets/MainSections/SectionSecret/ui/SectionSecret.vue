@@ -35,7 +35,7 @@ export default {
   <section class="secret">
     <BaseContainer>
       <div class="secret__header">
-        <h3>{{ t('title') }}</h3>
+        <h3 v-html="t('title')"></h3>
         <p class="secret__subtile">{{ t('subtitle') }}</p>
       </div>
       <v-list class="secret__list">

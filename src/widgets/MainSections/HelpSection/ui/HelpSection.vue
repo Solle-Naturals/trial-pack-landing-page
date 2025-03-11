@@ -8,6 +8,7 @@ import Man from '../images/man.png';
 import Lightning from '../images/lightning.png';
 import Health from '../images/health.png';
 import HairSlin from '../images/hair-skin.png';
+import MetabolicSupport from '../images/metabolicSupport.png';
 
 export default {
   components: {
@@ -24,6 +25,7 @@ export default {
         { img: Lightning, bold: 'sustained_bold', text: 'sustained' },
         { img: Health, bold: 'immune_bold', text: 'immune' },
         { img: HairSlin, bold: 'hair_bold', text: 'hair' },
+        { img: MetabolicSupport, bold: 'metabolic_bold', text: 'metabolic' },
       ],
     };
   },
