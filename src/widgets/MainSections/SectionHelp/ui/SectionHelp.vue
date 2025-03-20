@@ -141,7 +141,7 @@ export default {
       max-width: toRem(666);
       width: 100%;
       height: auto;
-      aspect-ratio: 666 / 346;
+      aspect-ratio: 717 / 550;
       object-fit: contain;
       object-position: center;
     }
