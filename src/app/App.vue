@@ -47,7 +47,7 @@ export default Vue.extend({
         {
           property: 'og:image',
           content:
-            'https://trial-pack.sollenaturals.com/Solle_Naturals_Trial_Reset_Box.png',
+            'https://static.sollenaturals.com/files/966f4b14-c902-1ca3-8dcf-6389819229ec/Solle_Naturals_trial_box.png',
         },
         {
           property: 'og:url',

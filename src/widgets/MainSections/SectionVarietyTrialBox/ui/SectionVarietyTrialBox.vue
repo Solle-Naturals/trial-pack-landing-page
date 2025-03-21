@@ -2,7 +2,7 @@
 import { isTablet } from '@/shared/lib';
 import { BaseContainer, BaseButton, BaseAnimation } from '@/shared/ui';
 import { useTranslation } from '@/app/i18n/hooks';
-import VarietyBox from '../images/variety-box.png';
+import VarietyBox from '../images/Trial_Box.png';
 import { LINK_TO_BOX } from '@/shared/lib';
 
 export default {
